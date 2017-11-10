@@ -13,10 +13,11 @@
 		20733CE91FB59FD600FD09D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20733CE81FB59FD600FD09D7 /* Assets.xcassets */; };
 		20733CEC1FB59FD600FD09D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20733CEA1FB59FD600FD09D7 /* LaunchScreen.storyboard */; };
 		20733CF41FB5A03E00FD09D7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 20733CF31FB5A03E00FD09D7 /* Podfile */; };
-		629C5C8B6FF1B3DC198D2D36 /* Pods_followanalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB23958EDC69901FBBDC37B /* Pods_followanalytics.framework */; };
+		FD84A210F11408A6F664E532 /* Pods_followanalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20704C741FB5B520008B2C69 /* Pods_followanalytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20704C741FB5B520008B2C69 /* Pods_followanalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_followanalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20733CDE1FB59FD600FD09D7 /* followanalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = followanalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20733CE11FB59FD600FD09D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20733CE31FB59FD600FD09D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,9 +27,7 @@
 		20733CED1FB59FD600FD09D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20733CF31FB5A03E00FD09D7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		208034FF1FB5A925004E957D /* followanalytics-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "followanalytics-Bridging-Header.h"; sourceTree = "<group>"; };
-		20B240D51FB5AD3E001FEE73 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3075C165972FA1D919029055 /* Pods-followanalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-followanalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-followanalytics/Pods-followanalytics.release.xcconfig"; sourceTree = "<group>"; };
-		6CB23958EDC69901FBBDC37B /* Pods_followanalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_followanalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E214A5619B6A1F24A8A11D /* Pods-followanalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-followanalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-followanalytics/Pods-followanalytics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				629C5C8B6FF1B3DC198D2D36 /* Pods_followanalytics.framework in Frameworks */,
+				FD84A210F11408A6F664E532 /* Pods_followanalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +79,7 @@
 		4285A670F7B04442B0DAD155 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20B240D51FB5AD3E001FEE73 /* Alamofire.framework */,
-				6CB23958EDC69901FBBDC37B /* Pods_followanalytics.framework */,
+				20704C741FB5B520008B2C69 /* Pods_followanalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

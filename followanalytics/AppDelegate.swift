@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FAFollowApps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
