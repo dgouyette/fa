@@ -12,6 +12,8 @@
 		20733CE71FB59FD600FD09D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20733CE51FB59FD600FD09D7 /* Main.storyboard */; };
 		20733CE91FB59FD600FD09D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20733CE81FB59FD600FD09D7 /* Assets.xcassets */; };
 		20733CEC1FB59FD600FD09D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20733CEA1FB59FD600FD09D7 /* LaunchScreen.storyboard */; };
+		20733CF41FB5A03E00FD09D7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 20733CF31FB5A03E00FD09D7 /* Podfile */; };
+		629C5C8B6FF1B3DC198D2D36 /* Pods_followanalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB23958EDC69901FBBDC37B /* Pods_followanalytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,12 @@
 		20733CE81FB59FD600FD09D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20733CEB1FB59FD600FD09D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20733CED1FB59FD600FD09D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20733CF31FB5A03E00FD09D7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		208034FF1FB5A925004E957D /* followanalytics-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "followanalytics-Bridging-Header.h"; sourceTree = "<group>"; };
+		20B240D51FB5AD3E001FEE73 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3075C165972FA1D919029055 /* Pods-followanalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-followanalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-followanalytics/Pods-followanalytics.release.xcconfig"; sourceTree = "<group>"; };
+		6CB23958EDC69901FBBDC37B /* Pods_followanalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_followanalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E214A5619B6A1F24A8A11D /* Pods-followanalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-followanalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-followanalytics/Pods-followanalytics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629C5C8B6FF1B3DC198D2D36 /* Pods_followanalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +47,12 @@
 		20733CD51FB59FD600FD09D7 = {
 			isa = PBXGroup;
 			children = (
+				20733CF31FB5A03E00FD09D7 /* Podfile */,
 				20733CE01FB59FD600FD09D7 /* followanalytics */,
 				20733CDF1FB59FD600FD09D7 /* Products */,
+				5881A23B646CB3ED48350396 /* Pods */,
+				4285A670F7B04442B0DAD155 /* Frameworks */,
+				208034FF1FB5A925004E957D /* followanalytics-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +77,24 @@
 			path = followanalytics;
 			sourceTree = "<group>";
 		};
+		4285A670F7B04442B0DAD155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20B240D51FB5AD3E001FEE73 /* Alamofire.framework */,
+				6CB23958EDC69901FBBDC37B /* Pods_followanalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5881A23B646CB3ED48350396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0E214A5619B6A1F24A8A11D /* Pods-followanalytics.debug.xcconfig */,
+				3075C165972FA1D919029055 /* Pods-followanalytics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20733CF01FB59FD600FD09D7 /* Build configuration list for PBXNativeTarget "followanalytics" */;
 			buildPhases = (
+				386CB5B114F90829EF4CF5C6 /* [CP] Check Pods Manifest.lock */,
 				20733CDA1FB59FD600FD09D7 /* Sources */,
 				20733CDB1FB59FD600FD09D7 /* Frameworks */,
 				20733CDC1FB59FD600FD09D7 /* Resources */,
+				DBDA83272BBAE23A4E35716B /* [CP] Embed Pods Frameworks */,
+				E04C462AFBA1F325CD214F4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +130,7 @@
 				TargetAttributes = {
 					20733CDD1FB59FD600FD09D7 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,11 +160,76 @@
 			files = (
 				20733CEC1FB59FD600FD09D7 /* LaunchScreen.storyboard in Resources */,
 				20733CE91FB59FD600FD09D7 /* Assets.xcassets in Resources */,
+				20733CF41FB5A03E00FD09D7 /* Podfile in Resources */,
 				20733CE71FB59FD600FD09D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		386CB5B114F90829EF4CF5C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-followanalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBDA83272BBAE23A4E35716B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-followanalytics/Pods-followanalytics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-followanalytics/Pods-followanalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E04C462AFBA1F325CD214F4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-followanalytics/Pods-followanalytics-resources.sh",
+				"${PODS_ROOT}/FollowApps/followapps_iOS_SDK_5.1.3/Pod/FollowApps/Settings.bundle",
+				"${PODS_ROOT}/FollowApps/followapps_iOS_SDK_5.1.3/Pod/FollowApps/FollowApps.framework/Versions/A/Headers/FABadge.h",
+				"${PODS_ROOT}/FollowApps/followapps_iOS_SDK_5.1.3/Pod/FollowApps/FollowApps.framework/Versions/A/Headers/FAEmbeddedView.h",
+				"${PODS_ROOT}/FollowApps/followapps_iOS_SDK_5.1.3/Pod/FollowApps/FollowApps.framework/Versions/A/Headers/FAFollowApps-Bridging-Header.h",
+				"${PODS_ROOT}/FollowApps/followapps_iOS_SDK_5.1.3/Pod/FollowApps/FollowApps.framework/Versions/A/Headers/FAFollowApps.h",
+				"${PODS_ROOT}/FollowApps/followapps_iOS_SDK_5.1.3/Pod/FollowApps/FollowApps.framework/Versions/A/Headers/FAInApp.h",
+				"${PODS_ROOT}/FollowApps/followapps_iOS_SDK_5.1.3/Pod/FollowApps/FollowApps.framework/Versions/A/Headers/FAMessage.h",
+				"${PODS_ROOT}/FollowApps/followapps_iOS_SDK_5.1.3/Pod/FollowApps/FollowApps.framework/Versions/A/Headers/FAPush.h",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-followanalytics/Pods-followanalytics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20733CDA1FB59FD600FD09D7 /* Sources */ = {
@@ -272,14 +372,18 @@
 		};
 		20733CF11FB59FD600FD09D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E214A5619B6A1F24A8A11D /* Pods-followanalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P5H25YDQ5N;
 				INFOPLIST_FILE = followanalytics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.hamak.followanalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "followanalytics-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +391,17 @@
 		};
 		20733CF21FB59FD600FD09D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3075C165972FA1D919029055 /* Pods-followanalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P5H25YDQ5N;
 				INFOPLIST_FILE = followanalytics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.hamak.followanalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "followanalytics-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
